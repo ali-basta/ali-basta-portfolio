@@ -41,7 +41,6 @@ Robotersteuerung, Kamera-/Vision-Anbindung und Koordinatentransformation.
   <em>Aufbau des Arbeitsplatzes mit UR-Roboterarm und Kamera.</em>
 </p>
 
-## Demo
 A short clip showing the full voice-to-pick-and-place cycle in action (voice command given in Arabic, captioned in English):
 
 [**▶ Watch the demo video**](https://www.youtube.com/shorts/WAYct-D2C68)
