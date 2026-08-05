@@ -82,7 +82,7 @@ LaTeX (Dokumentation)
 
 ---
 
-*Zusammenbauzeichnung, Berechnungsdokumentation und STEP-Modell sind hier nicht veröffentlicht,
+*Zusammenbauzeichnung und STEP-Modell sind hier nicht veröffentlicht,
 da es sich um eine bewertete Studienleistung handelt. Auf Anfrage zeige ich die Unterlagen gerne
 im Gespräch.*
 
