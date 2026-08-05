@@ -26,7 +26,7 @@ und für eine Serienfertigung von 200 Einheiten ausgelegt sein.
 *Schnittansicht: links die Lamellenbremse mit Federpaket und Lüftkolben, in der Mitte die beiden
 Planetenstufen, rechts die Abtriebswelle in Kegelrollenlagern (O-Anordnung) mit Abtriebsritzel.*
 
-![Isometrische Ansicht](bilder/isometrie.png)
+![Isometrische Ansicht](bilder/isoansicht.png)
 
 *Gesamtbaugruppe: Topfgehäuse mit Deckelteilung, Motorflansch links, Anschlussplatte und
 Abtriebsritzel rechts.*
