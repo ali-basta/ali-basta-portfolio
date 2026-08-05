@@ -1,6 +1,23 @@
+"""
+Quality gate.
+
+Standalone check on the conveyor: a Raspberry Pi camera watches a region of
+interest inside a 3D-printed housing and reports the colour of the coin passing
+through, so a caller can verify the right one was picked.
+
+Runs as its own Flask service and is deliberately not wired into the voice/LLM
+pipeline - it was built as a proof of concept for a downstream inspection step.
+
+Set SHOW_PREVIEW=1 to open a live preview window; without it the service runs
+headless, which is how it runs on the Pi.
+"""
+
 from flask import Flask, request, jsonify
+import os
 import cv2, numpy as np, time, threading
 from picamera2 import Picamera2
+
+SHOW_PREVIEW = os.getenv("SHOW_PREVIEW", "0") == "1"
 
 app = Flask(__name__)
 expected_color = None
@@ -66,7 +83,8 @@ def camera_loop():
     w = int(ROI_W_RATIO * TARGET_W)
     h = int(ROI_H_RATIO * TARGET_H)
 
-    cv2.namedWindow("Live Camera", cv2.WINDOW_NORMAL)
+    if SHOW_PREVIEW:
+        cv2.namedWindow("Live Camera", cv2.WINDOW_NORMAL)
 
     while not stop_flag:
         frame = picam2.capture_array()
@@ -95,10 +113,11 @@ def camera_loop():
                         cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2
                     )
 
-        cv2.imshow("Live Camera", bgr)
-        if cv2.waitKey(1) & 0xFF == ord("q"):
-            stop_flag = True
-            break
+        if SHOW_PREVIEW:
+            cv2.imshow("Live Camera", bgr)
+            if cv2.waitKey(1) & 0xFF == ord("q"):
+                stop_flag = True
+                break
 
     picam2.stop()
     picam2.close()
@@ -154,4 +173,4 @@ def shutdown():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=int(os.getenv("GATE_PORT", "5000")))
