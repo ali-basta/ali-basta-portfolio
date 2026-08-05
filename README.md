@@ -18,7 +18,10 @@ von 400 × 400 mm.
 **Mein Anteil:** CAD-Aufbau der Gesamtbaugruppe, Zeichnungsableitung, Festlegung von Passungen
 und Toleranzen, Stückliste und Montageanleitung.
 
-![Schnittansicht des Getriebes](planetengetriebe/bilder/schnittansicht.png)
+<p>
+  <img src="planetengetriebe/bilder/schnittansicht.png" width="650" alt="Schnittansicht des Getriebes"><br>
+  <em>Schnittansicht: Lamellenbremse, zwei Planetenstufen und Abtriebswelle.</em>
+</p>
 
 → **[Zum Projekt](planetengetriebe/)**
 
@@ -33,7 +36,10 @@ Fertigung.
 **Mein Anteil:** Konstruktion und 3D-Druck der mechanischen Komponenten, Aufbau des Arbeitsplatzes,
 Robotersteuerung, Kamera-/Vision-Anbindung und Koordinatentransformation.
 
-![Aufbau des Arbeitsplatzes](sprachgesteuerter-roboter/bilder/roboter.jpeg)
+<p>
+  <img src="sprachgesteuerter-roboter/bilder/roboter.jpeg" width="650" alt="Aufbau des Arbeitsplatzes"><br>
+  <em>Aufbau des Arbeitsplatzes mit UR-Roboterarm, Kamera und Förderband.</em>
+</p>
 
 → **[Zum Projekt](sprachgesteuerter-roboter/)**
 
