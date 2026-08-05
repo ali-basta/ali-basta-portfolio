@@ -1,3 +1,14 @@
+"""
+Ollama client.
+
+Thin wrapper that lets the rest of the pipeline talk to a locally hosted model
+using OpenAI-style message dicts. Converts those messages into Ollama's chat
+format, including inline base64 images for the vision model, and strips the
+reasoning blocks and code fences some models wrap around their JSON output.
+
+Configured entirely through environment variables (see .env.example).
+"""
+
 import os, requests, base64, re
 from typing import List, Dict, Any, Optional, Iterable
 
