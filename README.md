@@ -33,7 +33,7 @@ Fertigung.
 **Mein Anteil:** Konstruktion und 3D-Druck der mechanischen Komponenten, Aufbau des Arbeitsplatzes,
 Robotersteuerung, Kamera-/Vision-Anbindung und Koordinatentransformation.
 
-![Aufbau des Arbeitsplatzes](sprachgesteuerter-roboter/bilder/roboter.jpg)
+![Aufbau des Arbeitsplatzes](sprachgesteuerter-roboter/bilder/roboter.jpeg)
 
 → **[Zum Projekt](sprachgesteuerter-roboter/)**
 
