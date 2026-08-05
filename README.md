@@ -7,6 +7,13 @@ A collaborative cobot system that lets a human give **natural-language voice com
 
 The system understood and executed commands like this correctly.
 
+
+## Demo
+A short clip showing the full voice-to-pick-and-place cycle in action (voice command given in Arabic, captioned in English):
+
+[**▶ Watch the demo video**](https://www.youtube.com/shorts/WAYct-D2C68)
+
+
 ## How it works
 
 **1. Voice → Intent (LLM)**
@@ -47,11 +54,6 @@ This was a collaborative project built together with a colleague. I was involved
 | `voice_vision_robot_bridge.py` | Client/orchestrator: voice capture → LLM parsing → vision matching → sends pick/place requests to the robot server |
 | `ollama_client.py` | Wrapper for the locally hosted LLM (Ollama) backend; used as the primary LLM in practice to avoid ongoing API costs |
 | `quality_gate.py` | Standalone Flask service: camera-based inspection for the conveyor quality gate |
-
-## Demo
-A short clip showing the full voice-to-pick-and-place cycle in action (voice command given in Arabic, captioned in English):
-
-[**▶ Watch the demo video**](https://www.youtube.com/shorts/WAYct-D2C68)
 
 ---
 *Note: this repository contains a showcase version of code originally developed as part of a university research project, shared with permission. Internal network addresses and credentials have been removed/replaced with environment variables.*
