@@ -37,7 +37,7 @@ Fertigung.
 Robotersteuerung, Kamera-/Vision-Anbindung und Koordinatentransformation.
 
 <p>
-  <img src="sprachgesteuerter-roboter/bilder/roboter.jpeg" width="350" alt="Aufbau des Arbeitsplatzes">
+  <img src="sprachgesteuerter-roboter/bilder/aufbau.jpeg" width="350" alt="Aufbau des Arbeitsplatzes">
   <em>Aufbau des Arbeitsplatzes mit UR-Roboterarm, Kamera und Förderband.</em>
 </p>
 
