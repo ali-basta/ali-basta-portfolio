@@ -1,0 +1,6 @@
+# Reale Konfiguration mit Zugangsdaten - niemals committen
+.env
+
+# Python
+__pycache__/
+*.pyc
