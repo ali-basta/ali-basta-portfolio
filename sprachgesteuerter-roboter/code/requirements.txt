@@ -1,0 +1,6 @@
+flask>=3.0
+opencv-python>=4.9
+numpy>=1.26
+requests>=2.31
+openai>=1.30          # only needed when LLM_PROVIDER=openai
+# picamera2          # Raspberry Pi only, for quality_gate.py
