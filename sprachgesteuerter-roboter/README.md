@@ -19,7 +19,7 @@ Arabisch, englische Untertitel):
 [**▶ Demo-Video ansehen**](https://www.youtube.com/shorts/WAYct-D2C68)
 
 <p>
-  <img src="bilder/roboter.jpeg" width="450" alt="Aufbau des Arbeitsplatzes"><br>
+  <img src="bilder/aufbau.jpeg" width="450" alt="Aufbau des Arbeitsplatzes"><br>
   <em>Arbeitsplatz mit UR-Roboterarm, Kamera und Förderband.</em>
 </p>
 
